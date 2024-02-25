@@ -32,6 +32,11 @@ class ComposerStaticInitebd1b50a3bd3dc9bd5ee8f96ff50d1d2
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Contracts\\Translation\\' => 30,
             'Symfony\\Component\\Translation\\' => 30,
+            'Servicio\\' => 9,
+        ),
+        'R' => 
+        array (
+            'Repositorio\\' => 12,
         ),
         'P' => 
         array (
@@ -41,6 +46,10 @@ class ComposerStaticInitebd1b50a3bd3dc9bd5ee8f96ff50d1d2
             'PhpParser\\' => 10,
             'PhpOption\\' => 10,
             'Pecee\\' => 6,
+        ),
+        'M' => 
+        array (
+            'Modelo\\' => 7,
         ),
         'I' => 
         array (
@@ -66,6 +75,7 @@ class ComposerStaticInitebd1b50a3bd3dc9bd5ee8f96ff50d1d2
         ),
         'C' => 
         array (
+            'Controlador\\' => 12,
             'Carbon\\Doctrine\\' => 16,
             'Carbon\\' => 7,
         ),
@@ -101,6 +111,14 @@ class ComposerStaticInitebd1b50a3bd3dc9bd5ee8f96ff50d1d2
         array (
             0 => __DIR__ . '/..' . '/symfony/translation',
         ),
+        'Servicio\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Servicio',
+        ),
+        'Repositorio\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Repositorio',
+        ),
         'Psr\\SimpleCache\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/simple-cache/src',
@@ -124,6 +142,10 @@ class ComposerStaticInitebd1b50a3bd3dc9bd5ee8f96ff50d1d2
         'Pecee\\' => 
         array (
             0 => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee',
+        ),
+        'Modelo\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Modelo',
         ),
         'Illuminate\\Support\\' => 
         array (
@@ -179,6 +201,10 @@ class ComposerStaticInitebd1b50a3bd3dc9bd5ee8f96ff50d1d2
         'DDTrace\\' => 
         array (
             0 => __DIR__ . '/..' . '/datadog/dd-trace/src/api',
+        ),
+        'Controlador\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Controlador',
         ),
         'Carbon\\Doctrine\\' => 
         array (

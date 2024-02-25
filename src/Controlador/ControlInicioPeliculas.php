@@ -17,5 +17,6 @@ class ControlInicioPeliculas
     {
         $peliculas = $this->repositorio->obtenerTodas();
         include __DIR__ . ('/../Vista/index.php');
+        return $peliculas;
     }
 }

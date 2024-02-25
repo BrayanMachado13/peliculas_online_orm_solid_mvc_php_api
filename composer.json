@@ -3,7 +3,11 @@
     "description": "aplicacion de peliculas online",
     "autoload": {
         "psr-4": {
-            "Brayan\\PeliculasOnline\\": "src/"
+            "Brayan\\PeliculasOnline\\": "src/",
+            "Controlador\\": "src/Controlador/",
+            "Repositorio\\": "src/Repositorio/",
+            "Servicio\\": "src/Servicio/",
+            "Modelo\\": "src/Modelo/"
         }
     },
     "authors": [
