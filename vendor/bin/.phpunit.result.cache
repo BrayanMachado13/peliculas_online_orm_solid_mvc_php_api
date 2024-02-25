@@ -1,0 +1,1 @@
+{"version":1,"defects":{"ApiControladorTest::testFetchData":8,"Tests\\ApiControladorTest::testFetchData":7,"Controlador\\ApiControladorTest::testFetchData":8},"times":{"ApiControladorTest::testFetchData":0.028,"Tests\\ApiControladorTest::testFetchData":0.049,"Controlador\\ApiControladorTest::testFetchData":0.022}}

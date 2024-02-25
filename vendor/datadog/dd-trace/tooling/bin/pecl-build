@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+set -e
+
+rm -f ./bridge/_generated*.php
+composer -dtooling/generation update
+composer -dtooling/generation generate
+composer -dtooling/generation verify
+
+# PECL doesn't like the "+$gitsha1" part of the non-release version number.
+# Currently these aren't published, so truncating it is fine.
+dd_version=$(awk -F\' '/const VERSION/ {sub(/\+.*$/, "", $2); print $2}' < src/DDTrace/Tracer.php)
+
+configuration_placeholder='
+                <tasks:replace from="@php_dir@" to="php_dir" type="pear-config" />
+                <tasks:replace from="_BUILD_FROM_PECL_" to="PHP_VERSION_ID" type="php-const" />
+            </file>
+'
+
+codefiles=""
+for file in "$@"; do
+  codefiles="${codefiles}"$'\n            <file name="'"${file}"'" role="'"$([[ $file == tests/* ]] && echo test || echo src)"'" '"$([[ $file == */configuration.h ]] && echo ">$configuration_placeholder" || echo "/>")"
+done
+
+pkg_xml=$(cat package.xml)
+
+pkg_xml=${pkg_xml//'${version}'/${dd_version}}
+pkg_xml=${pkg_xml//'${date}'/$(date +%Y-%m-%d)}
+pkg_xml=${pkg_xml//'${codefiles}'/${codefiles}}
+
+echo "$pkg_xml" > package.xml
+
+# no profiling in pecl
+sed -i 's/, "profiling"//' "Cargo.toml"
+
+pear package-validate package.xml
+pear package
