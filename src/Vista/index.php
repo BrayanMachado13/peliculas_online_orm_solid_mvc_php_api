@@ -31,7 +31,7 @@
             <h1>Películas</h1>
             <div class="movie">
             <?php foreach ($peliculas as $pelicula): ?>
-                    <a href="detalle_peliculas.php?id=<?php echo $pelicula->id; ?>">
+                    <a href="verpelicula.php?id=<?php echo $pelicula->id; ?>&tipo=pelicula">
                         <div class="movie-card">
                             <img src="<?php echo $pelicula->imagen_principal; ?>" alt="<?php echo $pelicula->titulo; ?>">
                         </div>

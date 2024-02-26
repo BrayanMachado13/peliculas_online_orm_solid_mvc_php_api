@@ -29,7 +29,7 @@
             <h1>Series</h1>
             <div class="movie">
             <?php foreach ($series as $serie): ?>
-                    <a href="detalle_peliculas.php?id=<?php echo $serie->id; ?>">
+                    <a href="verpelicula.php?id=<?php echo $serie->id; ?>&tipo=serie">
                         <div class="movie-card">
                             <img src="<?php echo $serie->imagen_principal; ?>" alt="<?php echo $serie->nombre; ?>">
                         </div>

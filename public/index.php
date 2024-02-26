@@ -45,6 +45,4 @@ $controlador = new ControlInicioPeliculas($repositorio);
 // Ejecutar el método index del controlador
 $controlador->index();
 
-// Renderizar las métricas en formato texto para que Prometheus pueda recogerlas
-echo RenderTextFormat::fromCollectorRegistry($registry);
 
