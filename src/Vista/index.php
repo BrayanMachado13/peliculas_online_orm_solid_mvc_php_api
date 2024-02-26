@@ -14,11 +14,11 @@
         <div class="container">
             <nav>
             <img src="../logo/Free_Sample_By_Wix.jpg" alt="">
-                <ul>
-                    
+                <ul>  
                     <li><a href="">Inicio</a></li>
                     <li><a href="indexSeries.php">Series</a></li>
                     <li><a href="/peliculas">Películas</a></li>
+                    <li><a href="crud.php">crud</a></li>
                     <form action="index.php" method="post">
                         <button type="submit" name="fetch_data">Obtener Peliculas</button>
                     </form>
