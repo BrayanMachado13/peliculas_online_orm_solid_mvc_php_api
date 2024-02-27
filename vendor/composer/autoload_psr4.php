@@ -30,6 +30,8 @@ return array(
     'Illuminate\\Bus\\' => array($vendorDir . '/illuminate/bus'),
     'GrahamCampbell\\ResultType\\' => array($vendorDir . '/graham-campbell/result-type/src'),
     'Dotenv\\' => array($vendorDir . '/vlucas/phpdotenv/src'),
+    'Domnikl\\Test\\Statsd\\' => array($vendorDir . '/domnikl/statsd/tests/unit'),
+    'Domnikl\\Statsd\\' => array($vendorDir . '/domnikl/statsd/src'),
     'Doctrine\\Inflector\\' => array($vendorDir . '/doctrine/inflector/lib/Doctrine/Inflector'),
     'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
     'DataDog\\' => array($vendorDir . '/datadog/php-datadogstatsd/src'),

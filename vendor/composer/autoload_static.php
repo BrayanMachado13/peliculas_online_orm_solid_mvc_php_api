@@ -68,6 +68,8 @@ class ComposerStaticInitebd1b50a3bd3dc9bd5ee8f96ff50d1d2
         'D' => 
         array (
             'Dotenv\\' => 7,
+            'Domnikl\\Test\\Statsd\\' => 20,
+            'Domnikl\\Statsd\\' => 15,
             'Doctrine\\Inflector\\' => 19,
             'DeepCopy\\' => 9,
             'DataDog\\' => 8,
@@ -185,6 +187,14 @@ class ComposerStaticInitebd1b50a3bd3dc9bd5ee8f96ff50d1d2
         'Dotenv\\' => 
         array (
             0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
+        ),
+        'Domnikl\\Test\\Statsd\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/domnikl/statsd/tests/unit',
+        ),
+        'Domnikl\\Statsd\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/domnikl/statsd/src',
         ),
         'Doctrine\\Inflector\\' => 
         array (

@@ -5,6 +5,9 @@ require_once __DIR__ . '/../vendor/autoload.php';
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Controlador\ControlCrudPeliculas;
 
+
+
+
 $capsule = new Capsule;
 $capsule->addConnection([
     'driver'    => 'mysql',

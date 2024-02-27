@@ -1,0 +1,6 @@
+Tiempo de ejecución de la acción index(): 0.040826082229614 segundos
+Tiempo de ejecución de la acción index(): 0.054740905761719 segundos
+Tiempo de ejecución de la acción index(): 0.031920909881592 segundos
+Tiempo de ejecución de la acción index(): 0.035964012145996 segundos
+Tiempo de ejecución de la acción series: 0.037954092025757 segundos
+Tiempo de ejecución de la acción peliculas: 0.019253969192505 segundos
