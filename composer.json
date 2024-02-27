@@ -1,6 +1,6 @@
 {
     "name": "brayan/peliculas-online",
-    "description": "aplicacion de peliculas online",
+    "description": "peliculas online",
     "autoload": {
         "psr-4": {
             "Brayan\\PeliculasOnline\\": "src/",
@@ -12,7 +12,8 @@
     },
     "authors": [
         {
-            "name": "brayan machado"
+            "name": "BrayanMachado13",
+            "email": "brayanmachado0513@gmail.com"
         }
     ],
     "require": {
@@ -28,4 +29,5 @@
     "require-dev": {
         "phpunit/phpunit": "^10.5"
     }
+    
 }

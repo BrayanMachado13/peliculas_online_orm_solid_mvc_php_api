@@ -5,3 +5,14 @@ Tiempo de ejecución de la acción index(): 0.035964012145996 segundos
 Tiempo de ejecución de la acción series: 0.037954092025757 segundos
 Tiempo de ejecución de la acción peliculas: 0.019253969192505 segundos
 Tiempo de ejecución de la acción peliculas: 0.043205976486206 segundos
+Tiempo de ejecución de la acción peliculas: 0.054817914962769 segundos
+Tiempo de ejecución de la acción series: 0.026701211929321 segundos
+Tiempo de ejecución de la acción peliculas: 0.036492109298706 segundos
+Tiempo de ejecución de la acción series: 0.027153015136719 segundos
+Tiempo de ejecución de la acción peliculas: 0.05315899848938 segundos
+Tiempo de ejecución de la acción peliculas: 0.023760080337524 segundos
+Tiempo de ejecución de la acción peliculas: 0.02528190612793 segundos
+Tiempo de ejecución de la acción peliculas: 0.027338981628418 segundos
+Tiempo de ejecución de la acción series: 0.019698858261108 segundos
+Tiempo de ejecución de la acción peliculas: 0.037101984024048 segundos
+Tiempo de ejecución de la acción peliculas: 0.033215045928955 segundos
