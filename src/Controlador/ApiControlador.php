@@ -5,13 +5,14 @@ namespace Controlador;
 require_once __DIR__ . '/../Modelo/ApiModelo.php';
 
 use Modelo\ApiModelo;
+use Repositorio\ApiModeloInterface;
 
 class ApiControlador {
 
     private $modelo;
 
-    public function __construct() {
-        $this->modelo = new ApiModelo(); // Inicializa la propiedad $modelo
+    public function __construct(ApiModeloInterface $modelo) {
+        $this->modelo = $modelo; // Inicializa la propiedad $modelo
     }
 
     public function fetchData($apiKey) {
@@ -39,7 +40,7 @@ class ApiControlador {
             }
         }
     }
-    public function setModelo($modelo)
+    public function setModelo(ApiModeloInterface $modelo)
 {
     $this->modelo = $modelo;
 }

@@ -3,10 +3,12 @@
 namespace Modelo;
 
 use Illuminate\Database\Eloquent\Model;
+use Repositorio\ApiModeloInterface;
 
-class ApiModelo extends Model
+class ApiModelo extends Model implements ApiModeloInterface
 {
     protected $table = 'peliculas';
+    protected $primaryKey = 'id';
 
     public function fetchMovies($apiKey) {
         // URL de la API de TMDb para obtener las películas populares

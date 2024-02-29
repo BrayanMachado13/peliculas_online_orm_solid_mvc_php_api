@@ -3,12 +3,13 @@
 namespace Modelo;
 
 use Illuminate\Database\Eloquent\Model;
+use Repositorio\ApiModeloInterface;
 
-class ApiSerie extends Model
+class ApiSerie extends Model implements ApiModeloInterface
 {
     protected $table = 'series';
 
-    public function fetchSeries($apiKey) {
+    public function fetchMovies($apiKey) {
         // URL de la API de TMDb para obtener las películas populares
         $url = 'https://api.themoviedb.org/3/tv/popular?api_key=' . $apiKey;
 
@@ -32,7 +33,7 @@ class ApiSerie extends Model
         return $series;
     }
 
-    public function fetchVideoKeySeries($serieId, $apiKey) {
+    public function fetchVideoKey($serieId, $apiKey) {
         // URL de la API de TMDb para obtener los videos de una película
         $url = 'https://api.themoviedb.org/3/tv/' . $serieId . '/videos?api_key=' . $apiKey;
 

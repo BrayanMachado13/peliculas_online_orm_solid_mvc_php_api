@@ -49,7 +49,7 @@ class ApiModeloTest extends TestCase
     public function testFetchVideoKey()
     {
         $apiModelo = new ApiModelo();
-        $movieId = 550; // Example movie ID
+        $movieId = 550; // ejemplo movie ID
         $videoKey = $apiModelo->fetchVideoKey($movieId, $this->apiKey);
 
         // Verificar que se obtuvo la clave del video

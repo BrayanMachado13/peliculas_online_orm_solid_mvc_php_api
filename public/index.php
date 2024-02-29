@@ -1,18 +1,20 @@
 <?php
-
 require_once '../vendor/autoload.php';
 require_once '../src/Controlador/ControlInicioPeliculas.php';
 require_once '../src/Controlador/ApiControlador.php';
 require_once '../src/repositorio/PeliculasRepository.php';
-
+require_once '../src/repositorio/PeliculasRepositoryInterface.php';
+require_once '../src/servicio/PeliculasService.php';
+require_once '../src/modelo/ApiModelo.php';
+require_once '../src/repositorio/ApiModeloInterface.php';
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Controlador\ControlInicioPeliculas;
-use Repositorio\PeliculasRepository;
-use Servicio\PeliculasService;
-use Modelo\Pelicula;
 use Controlador\ApiControlador;
-
+use Repositorio\PeliculasRepository;
+use Repositorio\ApiModeloInterface;
+use Servicio\PeliculasService;
+use Modelo\ApiModelo;
 
 $capsule = new Capsule;
 
@@ -32,7 +34,8 @@ $capsule->bootEloquent();
 
 $apiKey = '021cf04cb15ec0ef1e5d3b944e6273a9'; // API key de TMDb
 
-$controlador = new ApiControlador();
+$modelo = new ApiModelo();
+$controlador = new ApiControlador($modelo);
 if (isset($_POST['fetch_data'])) {
     $controlador->fetchData($apiKey);
     echo "Datos obtenidos y guardados correctamente.";
@@ -44,5 +47,3 @@ $repositorio = new PeliculasRepository();
 $controlador = new ControlInicioPeliculas($repositorio);
 // Ejecutar el método index del controlador
 $controlador->index();
-
-

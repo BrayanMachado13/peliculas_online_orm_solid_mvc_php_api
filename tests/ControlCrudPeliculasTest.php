@@ -35,18 +35,18 @@ class ControlCrudPeliculasTest extends TestCase
     {
         $datos = [
             'idpelicula' => '1',
-            'titulo' => 'Test Movie',
-            'sinopsis' => 'This is a test movie',
+            'titulo' => 'pelicula',
+            'sinopsis' => 'esta es una pelicula',
             'imagen_principal' => 'test.jpg'
         ];
     
         $controlador = new ControlCrudPeliculas();
         $controlador->guardar($datos);
     
-        $peliculaGuardada = Pelicula::where('titulo', 'Test Movie')->first();
+        $peliculaGuardada = Pelicula::where('titulo', 'pelicula')->first();
     
-        $this->assertEquals('Test Movie', $peliculaGuardada->titulo);
-        $this->assertEquals('This is a test movie', $peliculaGuardada->sinopsis);
+        $this->assertEquals('pelicula', $peliculaGuardada->titulo);
+        $this->assertEquals('esta es una pelicula', $peliculaGuardada->sinopsis);
         $this->assertEquals('test.jpg', $peliculaGuardada->imagen_principal);
 
     }
@@ -56,10 +56,10 @@ class ControlCrudPeliculasTest extends TestCase
         // Crear una película para eliminar
         $pelicula = new Pelicula();
         $pelicula->idpelicula = 2;
-        $pelicula->titulo = 'Otra película';
-        $pelicula->sinopsis = 'Otra gran película';
-        $pelicula->imagen_principal = 'otra_imagen.jpg';
-        $pelicula->video_principal = 'otro_video.mp4';
+        $pelicula->titulo = 'terminator';
+        $pelicula->sinopsis = 'es una gran pelicula';
+        $pelicula->imagen_principal = 'imagen.jpg';
+        $pelicula->video_principal = 'video.mp4';
         $pelicula->save();
 
         // Crear instancia del controlador
