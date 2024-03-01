@@ -30,7 +30,7 @@ class VerPeliculaTest extends TestCase
         $verPelicula = new VerPelicula();
 
         // Definir un ID existente en la tabla de películas
-        $idPeliculaExistente = 1;
+        $idPeliculaExistente = 124;
 
         // Obtener la URL del video para la película existente
         $videoUrl = $verPelicula->obtenerVideoUrl($idPeliculaExistente);

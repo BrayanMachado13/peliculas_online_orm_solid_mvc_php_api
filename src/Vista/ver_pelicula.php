@@ -34,5 +34,4 @@
         <p>&copy; 2024 Peliculas Online</p>
     </footer>
 </body>
-
 </html>

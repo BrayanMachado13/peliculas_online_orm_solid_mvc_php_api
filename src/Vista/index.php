@@ -17,7 +17,7 @@
                 <ul>  
                     <li><a href="">Inicio</a></li>
                     <li><a href="indexSeries.php">Series</a></li>
-                    <li><a href="/peliculas">Películas</a></li>
+                    <li><a href="index.php">Películas</a></li>
                     <li><a href="crud.php">crud</a></li>
                     <form action="index.php" method="post">
                         <button type="submit" name="fetch_data">Obtener Peliculas</button>
@@ -44,5 +44,4 @@
         <p>&copy; 2024 Peliculas Online</p>
     </footer>
 </body>
-
 </html>

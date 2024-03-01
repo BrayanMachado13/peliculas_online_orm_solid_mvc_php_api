@@ -1,0 +1,11 @@
+Tiempo de ejecución de la acción peliculas: 0.0010530948638916 segundos
+Tiempo de ejecución de la acción peliculas: 0.00038599967956543 segundos
+Tiempo de ejecución de la acción peliculas: 0.00034499168395996 segundos
+Tiempo de ejecución de la acción peliculas: 0.00023913383483887 segundos
+Tiempo de ejecución de la acción peliculas: 0.00020503997802734 segundos
+Tiempo de ejecución de la acción peliculas: 0.00023102760314941 segundos
+Tiempo de ejecución de la acción peliculas: 0.00058913230895996 segundos
+Tiempo de ejecución de la acción peliculas: 0.00023293495178223 segundos
+Tiempo de ejecución de la acción peliculas: 0.0002601146697998 segundos
+Tiempo de ejecución de la acción peliculas: 0.00023007392883301 segundos
+Tiempo de ejecución de la acción peliculas: 0.00026988983154297 segundos

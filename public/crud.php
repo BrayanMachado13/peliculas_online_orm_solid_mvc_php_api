@@ -6,8 +6,6 @@ use Illuminate\Database\Capsule\Manager as Capsule;
 use Controlador\ControlCrudPeliculas;
 
 
-
-
 $capsule = new Capsule;
 $capsule->addConnection([
     'driver'    => 'mysql',

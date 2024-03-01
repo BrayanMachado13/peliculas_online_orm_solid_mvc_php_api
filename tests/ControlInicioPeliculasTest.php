@@ -34,4 +34,3 @@ class ControlInicioPeliculasTest extends TestCase
         $this->assertContainsOnlyInstancesOf(Pelicula::class, $resultado);
     }
 }
-

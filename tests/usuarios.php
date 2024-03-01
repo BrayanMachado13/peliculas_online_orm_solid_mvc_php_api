@@ -1,10 +1,9 @@
 <?php
-
 // URL de tu página
 $url = 'http://localhost/peliculas-online/public/index.php';
 
 // Número de usuarios simulados
-$numUsers = 1000;
+$numUsers = 100;
 
 // Función para realizar la petición cURL
 function makeRequest($url)

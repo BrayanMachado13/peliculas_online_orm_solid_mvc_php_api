@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Series</title>
 </head>
-
 <body>
     <header>
         <div class="container">
@@ -42,5 +41,4 @@
         <p>&copy; 2024 Series Online</p>
     </footer>
 </body>
-
 </html>
